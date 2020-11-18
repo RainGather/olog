@@ -1,0 +1,24 @@
+# 下面就是配置样例，请自行修改。
+# 将device的名字改为olog_svr指定当前device为olog日志汇总服务器
+# 请修改完成后，删除当前的全部注释内容。
+{
+    "device":"this_device_name#user@192.168.xxx.xxx:22",
+    "log_dirs": [
+        "/var/log",
+        "/path/to/other/log/dir"
+    ]
+    "log_keep_days":360,
+    "report_time":"11:00",
+    "svr_ip":"xxx.xxx.xxx.xxx",
+    "svr_port":8765,
+    "token":"AT_XXXXXXXXXXXXXXXXXXXXXXX",
+    "uids":["UID_XXXXXXXXXXXXXXXXXXXXX"],
+    "device_tasks": {
+        "device_name#user@192.168.xxx.xxx:22": [
+            "nginx",
+            "docker"
+        ]
+    },
+    "htmldir": "/www/olog_html",
+    "htmlurl": "http://xxx.xxx.xxx.xxx:8080/olog_html/"
+}

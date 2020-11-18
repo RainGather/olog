@@ -1,0 +1,10 @@
+olog.cfg
+*.sh
+*.bat
+test/
+*.log
+*.err
+*.scanerr
+*.out
+olog_html/
+logs/
